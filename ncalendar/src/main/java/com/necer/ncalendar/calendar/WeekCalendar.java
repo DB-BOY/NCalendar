@@ -101,7 +101,7 @@ public class WeekCalendar extends CalendarPager implements OnClickWeekViewListen
 
 
     @Override
-    protected void setDate(LocalDate date) {
+    public void setDate(LocalDate date) {
 
         if (date.isAfter(endDate) || date.isBefore(startDate)) {
             Toast.makeText(getContext(), R.string.illegal_date, Toast.LENGTH_SHORT).show();

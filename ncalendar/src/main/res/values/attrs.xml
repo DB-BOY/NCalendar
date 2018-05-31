@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="NCalendar">
+        <attr name="currentTextColor" format="color"/>
         <attr name="solarTextColor" format="color" />
         <attr name="lunarTextColor" format="color" />
         <attr name="hintColor" format="color" />

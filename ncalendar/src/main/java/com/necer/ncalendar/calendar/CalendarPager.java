@@ -10,11 +10,9 @@ import android.view.ViewTreeObserver;
 import com.necer.ncalendar.R;
 import com.necer.ncalendar.adapter.CalendarAdapter;
 import com.necer.ncalendar.utils.Attrs;
-import com.necer.ncalendar.utils.MyLog;
 import com.necer.ncalendar.utils.Utils;
 import com.necer.ncalendar.view.CalendarView;
 
-import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 
 import java.util.ArrayList;
@@ -51,6 +49,7 @@ public abstract class CalendarPager extends ViewPager {
         super(context, attrs);
 
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.NCalendar);
+        Attrs.currentDayColor = ta.getColor(R.styleable.NCalendar_currentTextColor, getResources().getColor(R.color.month_current_color));
         Attrs.solarTextColor = ta.getColor(R.styleable.NCalendar_solarTextColor, getResources().getColor(R.color.solarTextColor));
         Attrs.lunarTextColor = ta.getColor(R.styleable.NCalendar_lunarTextColor, getResources().getColor(R.color.lunarTextColor));
         Attrs.selectCircleColor = ta.getColor(R.styleable.NCalendar_selectCircleColor, getResources().getColor(R.color.selectCircleColor));
@@ -67,8 +66,8 @@ public abstract class CalendarPager extends ViewPager {
         Attrs.hollowCircleStroke = ta.getDimension(R.styleable.NCalendar_hollowCircleStroke, Utils.dp2px(context, 1));
 
 
-        Attrs.monthCalendarHeight = (int) ta.getDimension(R.styleable.NCalendar_calendarHeight, Utils.dp2px(context, 300));
-        Attrs.duration = ta.getInt(R.styleable.NCalendar_duration, 240);
+        Attrs.monthCalendarHeight = (int) ta.getDimension(R.styleable.NCalendar_calendarHeight, Utils.dp2px(context, 200));
+        Attrs.duration = ta.getInt(R.styleable.NCalendar_duration, 200);
 
         Attrs.isShowHoliday = ta.getBoolean(R.styleable.NCalendar_isShowHoliday, true);
         Attrs.holidayColor = ta.getColor(R.styleable.NCalendar_holidayColor, getResources().getColor(R.color.holidayColor));

@@ -5,6 +5,8 @@ package com.necer.ncalendar.utils;
  */
 
 public class Attrs {
+
+    public static int currentDayColor;
     public static int solarTextColor;
     public static int lunarTextColor ;
     public static int hintColor ;

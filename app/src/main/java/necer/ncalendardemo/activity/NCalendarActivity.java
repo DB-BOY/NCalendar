@@ -14,7 +14,6 @@ import com.necer.ncalendar.calendar.NCalendar;
 import com.necer.ncalendar.listener.OnCalendarChangedListener;
 import com.necer.ncalendar.utils.MyLog;
 
-import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 
 import java.util.ArrayList;
@@ -68,13 +67,14 @@ public class NCalendarActivity extends AppCompatActivity implements OnCalendarCh
             public void run() {
 
                 List<String> list = new ArrayList<>();
-                list.add("2017-09-21");
-                list.add("2017-10-21");
-                list.add("2017-10-1");
-                list.add("2017-10-15");
-                list.add("2017-10-18");
-                list.add("2017-10-26");
-                list.add("2017-11-21");
+                list.add("2018-05-01");
+                list.add("2018-05-03");
+                list.add("2018-05-21");
+                list.add("2018-06-1");
+                list.add("2018-06-15");
+                list.add("2018-06-18");
+                list.add("2018-06-21");
+                list.add("2018-06-26");
 
                 ncalendar.setPoint(list);
             }
@@ -92,7 +92,7 @@ public class NCalendarActivity extends AppCompatActivity implements OnCalendarCh
 
 
     public void setDate(View view) {
-        ncalendar.setDate("2017-12-31");
+        ncalendar.setDate("2018-05-31");
     }
 
     public void toMonth(View view) {
@@ -118,13 +118,14 @@ public class NCalendarActivity extends AppCompatActivity implements OnCalendarCh
 
     public void setPoint(View view) {
         List<String> list = new ArrayList<>();
-        list.add("2017-09-21");
-        list.add("2017-10-21");
-        list.add("2017-10-1");
-        list.add("2017-10-15");
-        list.add("2017-10-18");
-        list.add("2017-10-26");
-        list.add("2017-11-21");
+        list.add("2018-05-1");
+        list.add("2018-05-3");
+        list.add("2018-05-21");
+        list.add("2018-06-1");
+        list.add("2018-06-15");
+        list.add("2018-06-18");
+        list.add("2018-06-21");
+        list.add("2018-06-26");
 
         ncalendar.setPoint(list);
     }

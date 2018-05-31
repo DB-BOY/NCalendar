@@ -14,8 +14,9 @@ import com.necer.ncalendar.utils.Utils;
 import com.necer.ncalendar.view.CalendarView;
 import com.necer.ncalendar.view.MonthView;
 
-import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
+
+import java.util.Map;
 
 /**
  * Created by necer on 2017/8/28.
@@ -177,6 +178,19 @@ public class MonthCalendar extends CalendarPager implements OnClickMonthViewList
 
     public MonthView getCurrectMonthView() {
         return (MonthView) calendarAdapter.getCalendarViews().get(getCurrentItem());
+    }
+
+
+    /**
+     * 画关注
+     * @param focusMap
+     */
+    public void setFocusMap(Map<String, Integer> focusMap) {
+        MonthView calendarView = getCurrectMonthView();
+        if (calendarView == null) {
+            return;
+        }
+        calendarView.setFocusMap(focusMap);
     }
 
 }

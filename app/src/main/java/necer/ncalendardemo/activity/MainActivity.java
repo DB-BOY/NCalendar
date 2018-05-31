@@ -7,15 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.necer.ncalendar.utils.MyLog;
-
-import org.joda.time.LocalDate;
-import org.joda.time.LocalDateTime;
-import org.joda.time.Months;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import necer.ncalendardemo.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     public void toMiui(View v) {
         startActivity(new Intent(this, NCalendarActivity.class));
     }
-
 
     public void defaultSelect(View v) {
         startActivity(new Intent(this, MonthSelectActivity.class));

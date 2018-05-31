@@ -26,7 +26,7 @@ public abstract class CalendarView extends View {
     protected int mHeight;
     protected List<LocalDate> dates;
 
-
+    protected int mCurrentDayColor;//公历字体颜色
     protected int mSolarTextColor;//公历字体颜色
     protected int mLunarTextColor;//农历字体颜色
     protected int mHintColor;//不是当月的颜色
@@ -55,6 +55,7 @@ public abstract class CalendarView extends View {
 
     public CalendarView(Context context) {
         super(context);
+        mCurrentDayColor = Attrs.currentDayColor;
         mSolarTextColor = Attrs.solarTextColor;
         mLunarTextColor = Attrs.lunarTextColor;
         mHintColor = Attrs.hintColor;
