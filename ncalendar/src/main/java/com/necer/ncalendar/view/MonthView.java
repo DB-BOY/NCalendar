@@ -12,8 +12,8 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
-import com.necer.ncalendar.R;
-import com.necer.ncalendar.listener.OnClickMonthViewListener;
+import com.necer.R;
+import com.necer.listener.OnClickMonthViewListener;
 import com.necer.ncalendar.utils.Attrs;
 import com.necer.ncalendar.utils.Utils;
 
