@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="necer.ncalendardemo">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.necer.ncalendar">
 
     <application
         android:allowBackup="true"
@@ -8,7 +9,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,20 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".activity.NCalendarActivity"
+            android:name=".activity.TestMiui9Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.TestMiui10Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".activity.TestEmuiActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
-            android:name=".activity.MonthNotSelectActivity"
+            android:name=".activity.TestWeekHoldActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <activity
-            android:name=".activity.MonthSelectActivity"
+            android:name=".activity.TestMonthWeekActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <activity
-            android:name=".activity.WeekActivity"
+            android:name=".activity.TestAddViewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <activity
-            android:name=".activity.TestFragmentActivity"
+            android:name=".activity.CustomCalendarActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
 
     </application>

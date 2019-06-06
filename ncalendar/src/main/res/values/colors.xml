@@ -2,13 +2,23 @@
 <resources>
 
     <color name="solarTextColor">#000000</color>
-    <color name="lunarTextColor">#B2B2B2</color>
+    <color name="lunarTextColor">#AEAEAE</color>
+    <color name="solarTermTextColor">#B2B2B2</color>
+    <color name="lunarHolidayTextColor">#B2B2B2</color>
+    <color name="solarHolidayTextColor">#B2B2B2</color>
     <color name="hintColor">#999999</color>
+<<<<<<< HEAD
     <color name="selectCircleColor">#000000</color>
+=======
+    <color name="selectCircleColor">#39AF81</color>
+    <color name="todaySolarTextColor">#39AF81</color>
+>>>>>>> yannecer/master
     <color name="holidayColor">#39AF81</color>
     <color name="workdayColor">#EC7230</color>
     <color name="pointColor">#B2B2B2</color>
+    <color name="hollowCircleColor">#B2B2B2</color>
     <color name="white">#ffffff</color>
+    <color name="disabledColor">#999999</color>
 
     <color name="month_current_color">#09C5D5</color>
 
